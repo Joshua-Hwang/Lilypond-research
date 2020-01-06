@@ -10,18 +10,5 @@ I have introduced a few new elements to the model.
 * Ability to produce grains external from the initial time
   * This is also known as random sequential adsorption
 
-For more information please look at the `report.tex`
+For more information please look at the `report.tex` and compile it to a pdf.
 
-# todo
-* Next thing to do is update `approxlp.py` and `solvelp` to include the collisions
-section and the dimensions section.
-  * First we need to implement parsing dimensions.
-    * If dimensions are not defined then we continue the no boundary case
-    * If they are defined we need to ensure all points reside within the boundaries
-  * We need to modify the distance formula since we need to consider
-  the looping case and the hard boundary case
-  * If we're doing the hard boundary we need to replace the spair with
-  the closest boundary. The paired grain will be the NULL ptr.
-    * Every function now needs to handle g2 == NULL
-
-* Afterwards begin documenting EVERYTHING
